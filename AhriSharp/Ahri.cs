@@ -296,6 +296,9 @@ namespace AhriSharp
 
                 if (_menu.Item("comboROnlyUserInitiate").GetValue<bool>() || !(_spellQ.IsReady() && _spellE.IsReady()) || !enoughMana) //dont initiate if user doesnt want to, also dont initiate if Q and E isnt ready or not enough mana for QER combo
                     return false;
+                    
+                if (_menu.Item("comboROnlyUserInitiate").GetValue<bool>() 
+                    return false;
 
                 var friendsNearMouse = Program.Helper.OwnTeam.Where(x => x.IsMe || x.Distance(mousePos) < 650); //me and friends near mouse (already in fight)
 
