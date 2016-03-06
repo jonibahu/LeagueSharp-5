@@ -248,7 +248,7 @@ namespace AhriSharp
 
             if (_menu.Item("comboR").GetValue<bool>() && _spellR.IsReady())
             {
-                if (OkToUlt())
+                if (OkToUlt(true))
                 {
                     _spellR.Cast(Game.CursorPos);      
                 }   
