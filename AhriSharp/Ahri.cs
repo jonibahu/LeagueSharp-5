@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -349,14 +349,14 @@ namespace AhriSharp
             return distance / t;
         }
 
-        bool IsActive()
+        bool IsRActive()
         {
-            return ObjectManager.Player.HasBuff("AhriTumble", true);
+            return ObjectManager.Player.HasBuff("AhriTumble");
         }
-        int RStacks()
+
+        int GetRStacks()
         {
-            var rBuff = ObjectManager.Player.Buffs.Find(buff => buff.Name == "AhriTumble");
-            return rBuff != null ? rBuff.Count : 0;
+            return ObjectManager.Player.GetBuffCount("AhriTumble");
         }
     }
 }
