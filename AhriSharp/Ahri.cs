@@ -351,7 +351,7 @@ namespace AhriSharp
 
         bool IsRActive()
         {
-            return ObjectManager.Player.HasBuff("AhriTumble");
+            return ObjectManager.Player.HasBuff("AhriTumble", true);
         }
 
         int GetRStacks()
