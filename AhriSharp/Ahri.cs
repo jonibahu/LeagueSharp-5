@@ -356,7 +356,8 @@ namespace AhriSharp
 
         int GetRStacks()
         {
-            return ObjectManager.Player.GetBuffCount("AhriTumble");
+            var rBuff = ObjectManager.Player.Buffs.Find(buff => buff.Name == "AhriTumble");
+            return rBuff != null ? rBuff.Count : 0;
         }
     }
 }
