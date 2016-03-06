@@ -349,11 +349,11 @@ namespace AhriSharp
             return distance / t;
         }
 
-        static bool IsActive()
+        bool IsActive()
         {
             return ObjectManager.Player.HasBuff("AhriTumble", true);
         }
-        static int RStacks()
+        int RStacks()
         {
             var rBuff = ObjectManager.Player.Buffs.Find(buff => buff.Name == "AhriTumble");
             return rBuff != null ? rBuff.Count : 0;
