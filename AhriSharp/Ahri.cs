@@ -246,7 +246,7 @@ namespace AhriSharp
             }
 
 
-            if (_menu.Item("comboR").GetValue<bool>() && _spellR.IsReady() && _menu.Item("comboROnlyUserInitiate").GetValue<bool>() )
+            if (_menu.Item("comboR").GetValue<bool>() && _spellR.IsReady())
             {
                 if (OkToUlt())
                 {
