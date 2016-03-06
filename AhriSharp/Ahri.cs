@@ -282,8 +282,6 @@ namespace AhriSharp
             if (Program.Helper.EnemyTeam.Any(x => x.Distance(ObjectManager.Player) < 500)) //any enemies around me?
                 return true;
                 
-            if (_menu.Item("comboROnlyUserInitiate").GetValue<bool>() 
-                    return false; 
 
             Vector3 mousePos = Game.CursorPos;
 
